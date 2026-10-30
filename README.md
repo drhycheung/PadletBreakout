@@ -1,4 +1,4 @@
-# Padlet Breakout Linker
+# <img src="icon128.png" width="36" height="36" style="vertical-align: middle; margin-right: 8px;"> Padlet Breakout Linker
 
 A tiny **Manifest V3** browser extension for **Chrome and Edge** that puts a
 one-click **open-in-new (external-link)** button right next to every Padlet section’s “⋯” menu — so you
@@ -20,8 +20,6 @@ can jump straight to that section’s breakout room without the
 The on-page button uses the standard “open in new tab” glyph and shows its state by
 background colour: **transparent** (not yet linked) → **green** (linked — a click
 opens the room) → a brief **yellow flash** if it could not find the link.
-
-![Padlet Breakout Linker — the open-in-new button next to a section’s “⋯” menu](screenshot.png)
 
 ## How it gets each link (no manual copy/paste)
 
