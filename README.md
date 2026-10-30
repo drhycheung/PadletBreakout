@@ -14,8 +14,9 @@ can jump straight to that section’s breakout room without the
 - **One click** opens that section’s breakout room in a **new tab**; your current
   tab never changes.
 - **Alt+click** clears the saved link for that section.
-- A toolbar popup lists every captured link for the current board, with
-  **Open / Copy / ✕** per section, a **Re-scan page** button, and **Open all**.
+- A toolbar popup lists every captured link for the current board — **click a
+  section name to open** it, with **Copy** and **✕** per section, a
+  **Re-scan page** button, and **Open all**.
 
 The on-page button uses the standard “open in new tab” glyph and shows its state by
 background colour: **transparent** (not yet linked) → **green** (linked — a click

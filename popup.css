@@ -7,7 +7,7 @@ body {
   font-size: 13px;
   color: #222;
 }
-.hd { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.hd { font-size: 14px; font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
 .status { color: #555; margin-bottom: 8px; }
 ul { list-style: none; margin: 0 0 10px; padding: 0; max-height: 260px; overflow: auto; }
 li {
@@ -24,7 +24,7 @@ li button:hover { background: #eee; }
 .row { display: flex; gap: 8px; }
 .row button {
   flex: 1; border: none; border-radius: 8px; padding: 7px 0;
-  background: #ff7eb6; color: #fff; font-weight: 600; cursor: pointer;
+  background: #1aa179; color: #fff; font-weight: 600; cursor: pointer;
 }
-.row button:hover { background: #f25c9c; }
+.row button:hover { background: #158763; }
 .hint { color: #777; font-size: 11px; line-height: 1.5; margin: 10px 0 0; }
