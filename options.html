@@ -11,20 +11,23 @@
   </style>
 </head>
 <body>
-  <h1>Padlet Breakout Linker</h1>
+  <h1><img src="icon128.png" width="36" height="36" style="vertical-align: middle; margin-right: 8px;"> Padlet Breakout Linker</h1>
   <p>No configuration is required. The extension works automatically:</p>
   <ul>
     <li>It reads each section’s breakout room link directly from Padlet’s own board data
-        (<code>breakoutLink</code> on each section), so every 🔗 button is wired with no
+        (<code>breakoutLink</code> on each section), so every open-in-new button is wired with no
         copy‑and‑paste.</li>
-    <li>A small 🔗 icon is placed to the <strong>left of each section’s “⋯” menu</strong>
+    <li>A small open-in-new icon (square with an arrow to the upper right) is placed to the
+        <strong>left of each section’s “⋯” menu</strong>
         (detected precisely by its <code>aria-label</code>). It never appears on posts,
-        the top toolbar, or the settings panel.</li>
-    <li>Click a 🔗 button to open that section’s breakout room in a <strong>new tab only</strong> —
+        the top toolbar, or the settings panel. The button is <strong>transparent</strong> when
+        not yet linked, turns <strong>green</strong> once its link is found, and flashes
+        <strong>yellow</strong> if it cannot find the link.</li>
+    <li>Click an open-in-new button to open that section’s breakout room in a <strong>new tab only</strong> —
         the current tab never navigates.</li>
     <li>As a safety net, if you ever use Padlet’s own “⋯ → Copy breakout room link”, the link is
-        captured silently and attributed to the section you clicked. <code>Alt</code>+click a
-        🔗 button to clear its saved link.</li>
+        captured silently and attributed to the section you clicked. <code>Alt</code>+click an
+        open-in-new button to clear its saved link.</li>
   </ul>
   <p>Saved links are stored per board + section in the browser’s local storage and persist across reloads.</p>
 </body>
