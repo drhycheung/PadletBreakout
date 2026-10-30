@@ -1,0 +1,31 @@
+/* Injected "Open Breakout" icon button — small, sits to the left of Padlet's
+   three-dots. Positioned absolutely (set inline) inside the same relative
+   container as the three-dots, so it can never cover them or live inside an <a>. */
+.pbb-open-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 126, 182, 0.18); /* faint Padlet pink */
+  color: #d6336c;
+  font-size: 13px;
+  line-height: 1;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  user-select: none;
+  z-index: 5;
+}
+.pbb-open-btn:hover { background: rgba(255, 126, 182, 0.34); }
+.pbb-open-btn:active { transform: scale(0.92); }
+.pbb-open-btn.pbb-ready { background: #1aa179; color: #fff; }   /* green = a link is saved */
+.pbb-open-btn.pbb-ready:hover { background: #158763; }
+.pbb-open-btn.pbb-hint { animation: pbb-pulse 0.6s ease 3; }
+.pbb-open-btn.pbb-loading { background: rgba(255, 126, 182, 0.5); cursor: progress; }
+.pbb-open-btn.pbb-loading::after { content: '…'; }
+@keyframes pbb-pulse { 0%,100% { background: rgba(255,126,182,0.18); } 50% { background: #ffd43b; color:#333; } }

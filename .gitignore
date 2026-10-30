@@ -1,0 +1,10 @@
+# Agent / project-local data (never commit)
+.workbuddy/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / temp
+*.swp
+*~

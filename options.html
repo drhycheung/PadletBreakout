@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Padlet Breakout Linker — Options</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 680px; margin: 24px; color: #222; line-height: 1.6; }
+    h1 { font-size: 18px; }
+    code { background: #f3f3f3; padding: 1px 5px; border-radius: 4px; }
+    li { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <h1>Padlet Breakout Linker</h1>
+  <p>No configuration is required. The extension works automatically:</p>
+  <ul>
+    <li>It reads each section’s breakout room link directly from Padlet’s own board data
+        (<code>breakoutLink</code> on each section), so every 🔗 button is wired with no
+        copy‑and‑paste.</li>
+    <li>A small 🔗 icon is placed to the <strong>left of each section’s “⋯” menu</strong>
+        (detected precisely by its <code>aria-label</code>). It never appears on posts,
+        the top toolbar, or the settings panel.</li>
+    <li>Click a 🔗 button to open that section’s breakout room in a <strong>new tab only</strong> —
+        the current tab never navigates.</li>
+    <li>As a safety net, if you ever use Padlet’s own “⋯ → Copy breakout room link”, the link is
+        captured silently and attributed to the section you clicked. <code>Alt</code>+click a
+        🔗 button to clear its saved link.</li>
+  </ul>
+  <p>Saved links are stored per board + section in the browser’s local storage and persist across reloads.</p>
+</body>
+</html>
