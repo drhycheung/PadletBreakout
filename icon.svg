@@ -1,14 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2196F3"/>
-      <stop offset="1" stop-color="#1565C0"/>
+      <stop offset="0" stop-color="#1aa179"/>
+      <stop offset="1" stop-color="#158763"/>
     </linearGradient>
   </defs>
   <rect width="128" height="128" rx="28" fill="url(#bg)"/>
-  <!-- Two interlocking chain links, drawn as rings -->
-  <g fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round">
-    <rect x="40" y="29" width="30" height="70" rx="15" transform="rotate(45 55 64)"/>
-    <rect x="58" y="29" width="30" height="70" rx="15" transform="rotate(-45 73 64)"/>
+  <g transform="translate(16,16) scale(4)">
+    <path fill="#ffffff" d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
   </g>
 </svg>

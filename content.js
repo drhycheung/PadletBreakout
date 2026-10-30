@@ -5,7 +5,8 @@
  *   - Inject the MAIN-world hook (inject.js) so it can read Padlet's network +
  *     clipboard (this works even if the manifest "world":"MAIN" declaration is
  *     ignored on older Chrome).
- *   - Place a small 🔗 icon next to each section's three-dots menu.
+ *   - Place a small "open in new tab" (external-link) icon next to each
+ *     section's three-dots menu.
  *   - On click: open that section's breakout room in a NEW tab. The link comes
  *     from (1) automatic capture (inject.js relays it) or, failing that,
  *     (2) a one-click fallback that opens Padlet's own "Copy breakout room link"
@@ -124,7 +125,9 @@
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'pbb-open-btn';
-    btn.textContent = '🔗';
+    // Standard "open in new tab" glyph: a square with an arrow to the upper right.
+    btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">' +
+      '<path fill="currentColor" d="M19 19H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>';
     btn.title = 'Open breakout room for “' + title + '”  (Alt+click to clear)';
     btn.setAttribute('aria-label', 'Open breakout room for ' + title);
     btn.addEventListener('click', (e) => onButtonClick(e, title, btn));
