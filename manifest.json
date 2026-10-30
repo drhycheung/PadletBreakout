@@ -3,6 +3,11 @@
   "name": "Padlet Breakout Linker",
   "version": "1.0.1",
   "description": "Adds a one-click \"Open Breakout\" link next to each Padlet section header so you can jump straight to its breakout room without copying and pasting the link.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "permissions": ["storage"],
   "host_permissions": ["https://padlet.com/*", "https://*.padlet.com/*"],
   "content_scripts": [
@@ -31,6 +36,10 @@
   },
   "action": {
     "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    },
     "default_title": "Padlet Breakout Linker"
   }
 }

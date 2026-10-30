@@ -79,6 +79,8 @@ this folder.
 - `content.css` — styles for the injected icon.
 - `popup.html` / `popup.js` / `popup.css` — toolbar popup (list / open / copy / delete).
 - `options.html` / `options.js` — informational.
+- `icon.svg` — icon source (vector); `icon16.png` / `icon48.png` / `icon128.png` —
+  rasterised icons (pink chain-link on a rounded square).
 
 ## Notes & limitations
 
