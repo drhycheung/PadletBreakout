@@ -16,6 +16,8 @@ can jump straight to that section’s breakout room without the
 - A toolbar popup lists every captured link for the current board, with
   **Open / Copy / ✕** per section, a **Re-scan page** button, and **Open all**.
 
+![Padlet Breakout Linker — the 🔗 button next to a section’s “⋯” menu](screenshot.png)
+
 ## How it gets each link (no manual copy/paste)
 
 Padlet keeps each section’s breakout room on that section’s own object. The
